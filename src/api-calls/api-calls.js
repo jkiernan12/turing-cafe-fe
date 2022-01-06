@@ -13,4 +13,13 @@ const postData = (data) => {
   })
 }
 
-export {fetchAllRes, postData}
+const deleteData = (id) => {
+  fetch('http://localhost:3001/api/v1/reservations/' + id, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+}
+
+export { fetchAllRes, postData, deleteData }

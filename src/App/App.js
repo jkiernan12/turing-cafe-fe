@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <h1 className='app-title'>Turing Cafe Reservations</h1>
       <Form allReservations={allReservations} setAllReservations={setAllReservations} />
-      <Reservations allReservations={allReservations} />
+      <Reservations allReservations={allReservations} setAllReservations={setAllReservations}/>
     </div>
   )
 }
