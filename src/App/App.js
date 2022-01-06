@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <h1 className='app-title'>Turing Cafe Reservations</h1>
-      <Form />
+      <Form allReservations={allReservations} setAllReservations={setAllReservations} />
       <Reservations allReservations={allReservations} />
     </div>
   )
