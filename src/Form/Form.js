@@ -16,6 +16,10 @@ function Form({allReservations, setAllReservations}) {
       number: guests,
       name, time
     }])
+    setName('')
+    setDate('')
+    setTime('')
+    setGuests('')
   }
 
   return (
