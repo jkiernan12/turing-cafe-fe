@@ -1,0 +1,6 @@
+.ResCard {
+  width: clamp(200px, 25%, 100%);
+  background-color: white;
+  margin: 2%;
+  color: teal;
+}
