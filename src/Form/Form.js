@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { postData } from '../api-calls/api-calls';
 import './Form.css'
 
 function Form({allReservations, setAllReservations}) {
@@ -8,14 +9,18 @@ function Form({allReservations, setAllReservations}) {
   const [guests, setGuests] = useState(0);
 
   const submitRes = (e) => {
-    let cleanedDate = `${new Date(date).getMonth() + 1}/${new Date(date).getDay()}`
     e.preventDefault();
-    setAllReservations([...allReservations, {
+    let cleanedDate = `${new Date(date).getMonth() + 1}/${new Date(date).getDay()}`
+    const newData = {
       id: allReservations.length + 1,
       date: cleanedDate,
       number: guests,
       name, time
-    }])
+    }
+
+    postData(newData)
+    setAllReservations([...allReservations, newData])
+
     setName('')
     setDate('')
     setTime('')

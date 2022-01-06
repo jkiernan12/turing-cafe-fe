@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Form from '../Form/Form';
 import Reservations from '../Reservations/Reservations';
 import { fetchAllRes } from '../api-calls/api-calls';
