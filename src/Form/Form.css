@@ -1,0 +1,18 @@
+form {
+  width: 80%;
+  margin: 10px 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+form input {
+  width: 20%;
+  margin: 0 1%;
+}
+
+form button {
+  color: white;
+  background-color: teal;
+  border: none;
+  padding: 3px 20px;
+}

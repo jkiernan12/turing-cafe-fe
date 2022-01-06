@@ -6,7 +6,7 @@ function ResCard({resInfo, allReservations, setAllReservations}) {
 
   const deleteItem = (id) => {
     // e.preventDefault()
-    setAllReservations(allReservations.filter(res => res.id != id))
+    setAllReservations(allReservations.filter(res => res.id !== id))
 
     deleteData(id)
   }

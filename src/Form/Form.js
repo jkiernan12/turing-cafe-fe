@@ -12,7 +12,7 @@ function Form({allReservations, setAllReservations}) {
     e.preventDefault();
     let cleanedDate = `${new Date(date).getMonth() + 1}/${new Date(date).getDay()}`
     const newData = {
-      id: allReservations.length + 1,
+      id: Date.now(),
       date: cleanedDate,
       number: guests,
       name, time
