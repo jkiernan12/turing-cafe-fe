@@ -4,11 +4,11 @@ import './ResCard.css';
 function ResCard({resInfo}) {
   return (
     <article className='ResCard'>
-      <p>{resInfo.name}</p>
+      <h3 className='res-name'>{resInfo.name}</h3>
       <p>{resInfo.date}</p>
-      <p>{resInfo.time}</p>
-      <p>{resInfo.number}</p>
-      <button>Cancel</button>
+      <p>{resInfo.time} pm</p>
+      <p>Number of guests: {resInfo.number}</p>
+      <button className='cancel-button'>Cancel</button>
     </article>
   );
 }

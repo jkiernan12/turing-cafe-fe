@@ -1,6 +1,21 @@
 .ResCard {
-  width: clamp(200px, 25%, 100%);
+  width: clamp(200px, 15%, 100%);
   background-color: white;
-  margin: 2%;
+  margin: 1%;
   color: teal;
+  border-radius: 8px;
+  border: 6px solid teal;
+}
+
+.res-name {
+  font-weight: bold;
+}
+
+.cancel-button {
+  color: white;
+  background-color: teal;
+  border: none;
+  width: 90%;
+  padding: 5px 0;
+  margin: 5%;
 }
