@@ -6,10 +6,6 @@ function Form() {
   const [time, setTime] = useState('');
   const [guests, setGuests] = useState('');
 
-  const onChange = (e) => {
-    setName(e.target.value)
-  }
-
   return (
     <form>
       <input placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} type="text"/>

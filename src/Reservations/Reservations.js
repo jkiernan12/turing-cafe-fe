@@ -1,17 +1,9 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { fetchAllRes } from '../api-calls/api-calls';
 import ResCard from '../ResCard/ResCard';
 import './Reservations.css'
 
-function Reservations () {
-  const [allReservations, setAllReservations] = useState('')
-
-  useEffect(() => {
-    fetchAllRes()
-    .then(data => setAllReservations(data))
-  }, [])
-
+function Reservations ({allReservations}) {
   return (
     <section className="Reservations">
       {allReservations && allReservations.map(res => {
